@@ -1,7 +1,14 @@
 {
   "name": "multi-rand",
-  "module": "src/index.ts",
+  "version": "0.1.0",
   "type": "module",
+  "module": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir=dist"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
